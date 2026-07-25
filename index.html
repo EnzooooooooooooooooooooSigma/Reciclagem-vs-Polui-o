@@ -2,7 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Missão Reciclagem</title>
 
@@ -13,22 +17,49 @@
     <main>
         <h1>🌱 Missão Reciclagem</h1>
 
-        <p>
-            Colete os recicláveis e evite o lixo tóxico.
+        <p class="descricao">
+            Colete os recicláveis e fuja da poluição.
         </p>
 
         <div class="informacoes">
-            <span id="pontuacao">Recicláveis: 0/10</span>
-            <span id="vidas">Vidas: 3</span>
+            <span id="pontuacao">
+                Recicláveis: 0/25
+            </span>
+
+            <span id="vidas">
+                Vidas: 3
+            </span>
         </div>
 
-        <canvas id="jogo" width="700" height="450"></canvas>
+        <canvas
+            id="jogo"
+            width="1000"
+            height="600"
+        ></canvas>
 
         <p class="instrucoes">
-            Use as setas do teclado ou as teclas WASD.
+            Arraste o joystick para movimentar o personagem.
+            Também é possível usar as setas ou as teclas WASD.
         </p>
 
-        <button id="reiniciar">Reiniciar jogo</button>
+        <div
+            id="joystick"
+            class="joystick"
+            aria-label="Controle de movimento"
+        >
+            <div
+                id="joystick-bola"
+                class="joystick-bola"
+            ></div>
+        </div>
+
+        <button
+            id="reiniciar"
+            class="botao-reiniciar"
+            type="button"
+        >
+            Reiniciar jogo
+        </button>
     </main>
 
     <script src="script.js"></script>
